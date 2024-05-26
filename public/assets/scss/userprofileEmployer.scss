@@ -1,0 +1,64 @@
+@import "variables";
+
+.section-user-profile-employer{
+
+  .img-one-user-profile{
+    width: 150px;
+    height: 150px;
+  }
+  .card-text{
+    margin-bottom: -2px;
+  }
+  .img-two-user-profile{
+    width: 300px;
+    height: 300px;
+  }
+  h5{
+    margin-bottom: 1px;
+  }
+  .img-icon{
+    width: 24px;
+    height: 24px;
+  }
+  .fs-5{
+    margin-bottom: 3px;
+  }
+  #list-item-4{
+    h5{
+      margin-bottom: -4px;
+    }
+    h6{
+      margin-bottom: 1px;
+    }
+  }
+  #list-item-8{
+    h6{
+      margin-bottom: 1px;
+    }
+  }
+}
+.modal-lg{
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $primaryColor;
+    border-radius: 30px;
+  }
+}
+.cv{
+  color:#576C7A !important;
+  h3{
+    color:#576C7A !important;
+  }
+}
+.img-model-no-resume{
+  width: 200px;
+  height: 200px;
+}

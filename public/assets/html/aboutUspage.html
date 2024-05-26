@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Files -->
+  <!-- bootstrap css file -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <!-- bootstrap-icon css file -->
+  <link rel="stylesheet" href="assets/bootstrap-icon/bootstrap-icons.css">
+  <!-- swiper css file -->
+  <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- favicon -->
+  <link rel="icon" href="{{ asset(setting('logo')) }}">
+
+  <title> Talentak Website</title>
+</head>
+
+<body>
+
+    <!--====== BACK TO TP PART START ======-->
+    <button
+    type="button"
+    class="btn-back-to-top btn btn-primary text-white rounded-circle py-2 px-2"
+    >
+    <i class="bi bi-chevron-double-up"></i></button>   
+    
+      <a href="https://wa.me/+97334479384" class="whats-app" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Whatsapp">
+        <i class="bi bi-whatsapp my-float"></i>
+    </a>
+  </a>
+    <!--====== BACK TO TP PART ENDS ======-->
+
+  <!------- Header ------->
+  <!------- Header ------->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-lg d-flex align-items-center justify-content-between">
+      <a  href="index.html"><img src="{{ asset(setting('logo')) }}" alt="" class="nav-logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav  ms-auto d-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link text-black fw-semibold active link-primary fs-5" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black fw-semibold link-primary fs-5" href="aboutUspage.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black fw-semibold link-primary fs-5" href="contactUspage.html">Contact</a>
+          </li>
+            <div class="dropdown">
+              <li class="nav-item d-flex align-items-center">
+              <i class="bi bi-search-heart ms-2"></i>
+              <a class="nav-link text-black fw-semibold link-primary  fs-5" type="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Views</a>
+            
+              <ul class="dropdown-menu">
+                <li class="text-black fw-semibold fs-5 mx-3">Profile views</li>
+                <li><a class="dropdown-item" href="#">
+                <div>
+              <div class="friend-drawer friend-drawer--onhover">
+                <img class="profile-image" src="images/chat2.png" alt="" width="50" height="50">
+                <div class="text">
+                  <h6>Ayman Nagy</h6>
+                  <p class="text-muted">Works at Emcan</p>
+                </div>
+                <span class="time text-muted small">Viewed 5 hrs ago</span>
+              </div>
+                </div>
+              </a>
+            </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                <div>
+              <div class="friend-drawer friend-drawer--onhover">
+                <img class="profile-image" src="images/chat1.png" alt="" width="50" height="50">
+                <div class="text">
+                  <h6>Ayman Nagy</h6>
+                  <p class="text-muted">Works at Emcan</p>
+                </div>
+                <span class="time text-muted small">Viewed 5 hrs ago</span>
+              </div>
+
+                </div>
+              </a>
+            </li>
+                <li><a class="dropdown-item" href="#">
+                <div>
+              <div class="friend-drawer friend-drawer--onhover">
+                <img class="profile-image" src="images/chat3.png" alt="" width="50" height="50">
+                <div class="text">
+                  <h6>Ayman Nagy</h6>
+                  <p class="text-muted">Works at Emcan</p>
+                </div>
+                <span class="time text-muted small">Viewed 5 hrs ago</span>
+              </div>
+                </div>
+              </a>
+            </li>
+            <div class="d-flex justify-content-center">
+              <a href="" class="text-primary text-center text-decoration-none fw-semibold">See more who viewed your profile</a>
+            </div>
+              </ul>
+            </li>
+            </div>
+
+            <div class="dropdown">
+              <li class="nav-item d-flex align-items-center">
+                <i class="bi bi-wechat  fs-4 ms-2"></i>
+                <a class="nav-link text-black fw-semibold link-primary fs-5" href="#" type="button" data-bs-toggle="dropdown" aria-expanded="false">Messages</a>
+            
+              <ul class="dropdown-menu">
+                <li class="text-black fw-semibold fs-5 mx-3">Chats</li>
+                <li><a class="dropdown-item" href="#">
+                <div>
+              <div class="friend-drawer friend-drawer--onhover">
+                <img class="profile-image" src="images/chat2.png" alt="" width="50" height="50">
+                <div class="text">
+                  <h6>Ayman Nagy</h6>
+                  <p class="text-muted">Works at Emcan</p>
+                </div>
+                <span class="time text-muted small float-end">00:22</span>
+              </div>
+                </div>
+              </a>
+            </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                <div>
+              <div class="friend-drawer friend-drawer--onhover">
+                <img class="profile-image" src="images/chat1.png" alt="" width="50" height="50">
+                <div class="text">
+                  <h6>Ayman Nagy</h6>
+                  <p class="text-muted">Works at Emcan</p>
+                </div>
+                <span class="time text-muted small float-end">00:22</span>
+              </div>
+
+                </div>
+              </a>
+            </li>
+                <li><a class="dropdown-item" href="#">
+                <div>
+              <div class="friend-drawer friend-drawer--onhover">
+                <img class="profile-image" src="images/chat3.png" alt="" width="50" height="50">
+                <div class="text">
+                  <h6>Ayman Nagy</h6>
+                  <p class="text-muted">Works at Emcan</p>
+                </div>
+                <span class="time text-muted small float-end">00:22</span>
+              </div>
+                </div>
+              </a>
+            </li>
+            <div class="d-flex justify-content-center">
+              <a href="" class="text-primary text-center text-decoration-none fw-semibold">See more messages</a>
+            </div>
+              </ul>
+            </li>
+            </div>
+        
+          <li class="nav-item d-flex align-items-center">
+            <i class="bi bi-globe2 mx-2"></i>
+            <a class="fw-semibold text-decoration-none text-black fs-5">English</a>
+          </li>
+
+
+          
+          <div class="dropdown">
+            <div class="d-flex fs-5 mx-3">
+              <button class="d-flex justify-content-around  align-items-center btn btn-outline-primary py-1 px-2"  type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/chat1.png" alt="" width="40" height="40"> <span class="ms-2">Adam</span></button>
+          
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">
+            
+              <div class="text">
+                <h6 class="text-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">Reviews</h6>
+                
+                <hr/>
+                <h6 class="text-primary">Logout</h6>
+              </div>
+          
+              
+            </a>
+          </li>
+            
+            </ul>
+          </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Modal -->
+<div class="modal fade cv" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <button type="button" class="btn-close text-primary" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body text-center">
+        <h5 class="text-primary">Review <span class="text-black">us</span></h5>
+        <p class="text-secondary">Write your feedback and share it with others</p>
+      </div>
+      <div class="modal-body">
+        <h5 class="text-black">Rating</h5>
+        <div class="d-flex">
+          <i class="bi bi-star mx-1 fs-4 text-black"></i>
+          <i class="bi bi-star mx-1 fs-4 text-black"></i>
+          <i class="bi bi-star mx-1 fs-4 text-black"></i>
+          <i class="bi bi-star mx-1 fs-4 text-black"></i>
+          <i class="bi bi-star mx-1 fs-4 text-black"></i>
+        </div>
+        <label for="" class="fs-5 text-black">Write your review</label>
+        <textarea name="" id="" cols="30" rows="4" class="form-control" placeholderType your review...></textarea>
+      </div>
+      <button class="btn btn-primary mt-4 py-1 px-5 text-white mb-3">Submit review</button>
+    
+    </div>
+  </div>
+</div>
+<!-- end modal  -->
+  <!--===== start offcanvas sidebar responsive ====== -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav  ms-auto d-flex ">
+        <li class="nav-item">
+          <a class="nav-link text-black fw-semibold active link-primary fs-5 border-bottom" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black fw-semibold link-primary fs-5 border-bottom" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black fw-semibold link-primary fs-5 border-bottom" href="#">Contact</a>
+        </li>
+        <li class="nav-item d-flex align-items-center">
+          <i class="bi bi-search-heart ms-2"></i>
+          <a class="nav-link text-black fw-semibold link-primary fs-5 border-bottom" href="#">Views</a>
+        </li>
+        <li class="nav-item d-flex align-items-center">
+          <i class="bi bi-wechat  fs-4 ms-2"></i>
+          <a class="nav-link text-black fw-semibold link-primary fs-5 border-bottom" href="#">Messages</a>
+        </li>
+        <li class="nav-item d-flex align-items-center">
+          <i class="bi bi-globe2 mx-2"></i>
+          <a class="nav-link text-black fw-semibold link-primary fs-5 border-bottom">English</a>
+        </li>
+        <div class="d-flex fs-5 mx-3">
+          <button class="d-flex justify-content-around  align-items-center btn btn-outline-primary py-1"><img src="images/chat1.png" alt="" width="30" height="30"> <span class="ms-2">Adam</span></button>
+        </div>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Start contactUs Section -->
+  <section class="mb-4 section-aboutUs">
+    <div class="container">
+      <!-- Send heading text -->
+      <div class="section-header text-center">
+        <h3 class="text-black"> About us</h3>
+        <span class="fs-6 mt-4 text-secondary fw-normal m-0 p-0">Let’s introduce ourselves </span>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-between gy-5">
+          <div class="col-12 col-sm-6 col-md-5">
+          <h3 class="lh-lg">We help create connections between <span class="text-primary">Companies</span>  and <span class="text-primary">Applicants</span>.</h3>
+            <p class="text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat eget nulla vel aliquam. Donec turpis felis, semper id bibendum sed, commodo sed tortor. Ut pellentesque feugiat augue, quis tristique mauris vulputate id. Donec pretium scelerisque nunc, eget condimentum neque luctus luctus. Mauris congue venenatis justo,</p>
+
+          </div>
+          <div class="col-12 col-sm-5 col-md-7 d-flex align-items-center justify-content-center flex-column">
+            <div class="row d-flex align-items-center justify-content-center flex-column">
+              <div class="col-sm-12">
+                <img src="images/about1.png" alt="" class="aboutUs-img m-5 m-sm-1">
+              </div>
+              <div class="col-sm-12">
+                <img src="images/about2.png" alt="" class="aboutUs-img-2 aboutUs-img m-5 m-sm-1">
+              </div>
+              <div class="col-sm-12">
+                <img src="images/about3.png" alt="" class="aboutUs-img m-5 m-sm-1">
+              </div>
+            </div>
+        </div>
+        
+        
+        </div>
+      </div>
+  </section>
+  <!-- End Send Section -->
+
+
+  <!--=== section Our Statistics ==== -->
+  <section class="Our-Statistics py-4">
+    <div class="section-header text-center">
+      <h3 class="text-primary">
+        Our Statistics </h3>
+      <span class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat eget nulla vel aliquam.</span>
+    </div>
+    <div class="container mt-5">
+      <div class="card border-0">
+        <div class="d-flex shadow rounded-4 p-3 flex-column flex-sm-row">
+          <div class="card-body text-center">
+            <img src="images/about4.png" alt="" class="our-statistics-img">
+            <h5 class="card-title fw-bold fs-4 mt-2">5+ </h5>
+            <p class="card-text fw-semibold">Years of experience</p>
+          </div>
+          <div class="card-body text-center">
+            <img src="images/about5.png" alt="" class="our-statistics-img">
+            <h5 class="card-title fw-bold fs-4 mt-2">2000+ </h5>
+            <p class="card-text fw-semibold">Happy customers</p>
+          </div>
+          <div class="card-body text-center">
+            <img src="images/about6.png" alt="" class="our-statistics-img">
+            <h5 class="card-title fw-bold fs-4 mt-2"> 1000 </h5>
+            <p class="card-text fw-semibold">Customer connected</p>
+          </div>
+          <div class="card-body text-center">
+            <img src="images/about7.png" alt="" class="our-statistics-img">
+            <h5 class="card-title fw-bold fs-4 mt-2"> 1000 </h5>
+            <p class="card-text fw-semibold">Companies</p>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- start swiper logo -->
+  <section class="logo-container py-6 mt-4">
+    <div class="section-header text-center">
+      <h3 class="text-primary">
+        Our Partner </h3>
+      <span class="text-secondary">We take satisfaction in being trusted and in having the chance to collaborate with
+        industry leaders.</span>
+    </div>
+    <div class="swiper logo-slider py-4 mt-4">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide slide">
+          <img src="images/Basecamp.png" alt="">
+        </div>
+        <div class="swiper-slide slide">
+          <img src="images/Segment.png" alt="">
+        </div>
+        <div class="swiper-slide slide">
+          <img src="images/Company logo.png" alt="">
+        </div>
+        <div class="swiper-slide slide">
+          <img src="images/Company logo2.png" alt="">
+        </div>
+        <div class="swiper-slide slide">
+          <img src="images/Slack.png" alt="">
+        </div>
+
+        <div class="swiper-slide slide">
+          <img src="images/Hopin.png" alt="">
+        </div>
+
+
+        <div class="swiper-slide slide">
+          <img src="images/Atlassian.png" alt="">
+        </div>
+      </div>
+
+      
+      <div class="swiper-button-prev bg-primary text-white rounded-2 p-3"></div>
+      <div class="swiper-button-next bg-primary text-white rounded-2 p-3"></div>
+    </div>
+  </section>
+
+<!--==== start testimonials section ====== -->
+  <section id="testimonials" class="testimonials pt-0 pb-8">
+    <div class="container">
+      <div class="section-header text-center">
+        <h3 class="text-primary">Happy Applicants About Us</h3>
+        <span class="text-secondary">We are happy to hear from you</span>
+
+      </div>
+    </div>
+
+    <div class="testimonialsSlides swiper mt-5">
+      <div class="swiper-wrapper">
+      <div class="swiper-slide">
+
+    <div class="testimonial-item">
+
+    <div class="row py-3 justify-content-end">
+        <div class="col-lg-10 bg-white shadow-lg py-7 swiper-Testimonials d-flex justify-content-evenly flex-column flex-sm-row">
+          <div class="bg-primary text-white rounded-4 py-5 px-2  d-inline-block ms-5">
+            Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+          </div>
+          <div class="text-center text-sm-start mt-sm-0 mt-3">
+            <div class="stars text-primary fs-5">
+              <i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+              <img src="images/Frame 427321814.png" alt="">
+              <div class="mx-3">
+                <h3 class="fw-semibold text-black fs-5">Adam Invogue</h3>
+                <h4 class="text-warning fs-7 fw-normal">Bussiness man</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+        <div class="swiper-slide">
+
+          <div class="testimonial-item">
+
+    <div class="row py-3 justify-content-end">
+      <div class="col-lg-10 bg-white shadow-lg py-7 swiper-Testimonials d-flex justify-content-evenly flex-column flex-sm-row">
+        <div class="bg-primary text-white rounded-4 py-5 px-2  d-inline-block ms-5">
+          Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+        </div>
+        <div class="text-center text-sm-start mt-sm-0 mt-3">
+          <div class="stars text-primary fs-5">
+            <i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i>
+          </div>
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="images/Frame 427321814.png" alt="">
+            <div class="mx-3">
+              <h3 class="fw-semibold text-black fs-5">Adam Invogue</h3>
+              <h4 class="text-warning fs-7 fw-normal">Bussiness man</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+    </div>
+        <div class="swiper-slide">
+
+          <div class="testimonial-item">
+
+    <div class="row py-3 justify-content-end">
+      <div class="col-lg-10 bg-white shadow-lg py-7 swiper-Testimonials d-flex justify-content-evenly flex-column flex-sm-row">
+        <div class="bg-primary text-white rounded-4 py-5 px-2  d-inline-block ms-5">
+          Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+        </div>
+        <div class="text-center text-sm-start mt-sm-0 mt-3">
+          <div class="stars text-primary fs-5">
+            <i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i>
+          </div>
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="images/Frame 427321814.png" alt="">
+            <div class="mx-3">
+              <h3 class="fw-semibold text-black fs-5">Adam Invogue</h3>
+              <h4 class="text-warning fs-7 fw-normal">Bussiness man</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+  
+</div>
+<div class="swiper-pagination mb-5"></div>
+    </div>
+
+
+  </section>
+
+    <!----- Footer ----->
+    <footer class="footer bg-primary py-4" id="footer">
+      <div class="container">
+        <div class="row gy-3">
+          <!-- Start content Footer -->
+            <div class="col-lg-4 col-md-6 footer-links text-white">
+              <h2 class=" fw-bold position-relative cursor-pointer">Talentak  </h2>
+              <h6 class="fw-normal">“Lorem ipsum dolor sit amet, 
+                consectetur elit nisi adipiscing” </h6>
+  
+                <h4 class="mt-4">Find us on Social media</h4>
+              <div class="social-links d-flex ">
+                <a href="#" class="d-flex align-items-center justify-content-center rounded-5 me-2 twitter fs-5"><i class="bi bi-twitter"></i></a>
+                <a href="" class="d-flex align-items-center justify-content-center rounded-5 me-2 linkedin fs-5" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="" class="d-flex align-items-center justify-content-center rounded-5 me-2 facebook fs-5" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="" class="d-flex align-items-center justify-content-center rounded-5 me-2 instagram fs-5" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="" class="d-flex align-items-center justify-content-center rounded-5 me-2 whatsapp fs-5" target="_blank"><i class="bi bi-whatsapp"></i></a>
+              
+                <a href="" class="d-flex align-items-center justify-content-center rounded-5 me-2 twitter fs-5"><i class="bi bi-google"></i></a>
+              </div>
+            </div>
+    
+            
+          <div class="col-lg-2 col-md-6 d-flex text-white">
+            <div>
+              <h4 class="fs-5 fw-bold position-relative border-bottom border-3">Services</h4>
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Development</h6>
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Design and arts</h6>
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Writing & Translation</h6>
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Video & animation</h6>
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Digital marketing</h6>
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Business</h6>
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Photography</h6>
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Music & Audio</h6>
+  
+            </div>
+          </div>
+          <!-- Start content Footer -->
+            <div class="col-lg-2 col-md-6 footer-links d-flex text-white">
+              <div>
+                <h4 class="fs-5 fw-bold position-relative border-bottom border-3">About</h4>
+              <a href="aboutUspage.html" class="text-white text-decoration-none">
+                <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer text-white">About us</h6>
+              </a> 
+                
+  
+              </div>
+            </div>
+  
+          <!-- Start content Footer -->
+          <div class="col-lg-2 col-md-6 footer-links d-flex text-white">
+            <div>
+              <h4 class="fs-5 fw-bold position-relative border-bottom border-3">Contact us</h4>
+            <a href="contactUspage.html"  class="text-white text-decoration-none">
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Contact Us</h6>
+            </a>
+            <a href="terms.html" class="text-white text-decoration-none">
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Terms & Conditions</h6>
+            </a>
+            <a href="privacy.html" class="text-white text-decoration-none">
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Privacy Policy</h6>
+            </a>
+  
+            </div>
+          </div>
+  
+        
+      </div>
+      </div>
+  
+      <!-- start copyright -->
+      <div class="container text-center fs-6">
+        <div class="copyright">
+          <a href="" class="text-white text-decoration-none">© 2023 ProductName. All rights reserved.</a>
+        </div>
+      </div>
+  
+  
+    </footer>
+    <!-- End Footer -->
+
+
+
+
+
+
+
+  <!-- JS Files -->
+
+  <!-- bootstrap js file -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <!-- swiper js file -->
+  <script src="assets/swiper/swiper-bundle.min.js"></script>
+
+ 
+  <script src="js/backtotop.js"></script>
+
+
+</body>
+
+</html>

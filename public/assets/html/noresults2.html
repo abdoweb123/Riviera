@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Files -->
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- bootstrap-icon css file -->
+    <link rel="stylesheet" href="assets/bootstrap-icon/bootstrap-icons.css" />
+    <!-- swiper css file -->
+    <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- favicon -->
+    <link rel="icon" href="{{ asset(setting('logo')) }}" />
+
+    <title>Talentak Website</title>
+  </head>
+
+  <body>
+
+
+  <!--====== BACK TO TP PART START ======-->
+  <button
+  type="button"
+  class="btn-back-to-top btn btn-primary text-white rounded-circle py-2 px-2"
+  >
+  <i class="bi bi-chevron-double-up"></i></button>   
+  
+    <a href="https://wa.me/+97334479384" class="whats-app" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Whatsapp">
+      <i class="bi bi-whatsapp my-float"></i>
+  </a>
+</a>
+  <!--====== BACK TO TP PART ENDS ======-->
+
+    <!------- Header ------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+      <div
+        class="container-lg d-flex align-items-center justify-content-between"
+      >
+        <img src="{{ asset(setting('logo')) }}" alt="" class="nav-logo" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto d-flex align-items-center">
+            <li class="nav-item">
+              <a
+                class="nav-link text-black fw-semibold active link-primary fs-5"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-black fw-semibold link-primary fs-5"
+                href="#"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-black fw-semibold link-primary fs-5"
+                href="#"
+                >Contact</a
+              >
+            </li>
+
+            <li class="nav-item d-flex align-items-center">
+              <i class="bi bi-globe2 mx-2"></i>
+              <a class="fw-semibold text-decoration-none text-black fs-5"
+                >English</a
+              >
+            </li>
+
+            <li class="nav-item d-flex align-items-center">
+              <i class="bi bi-wechat fs-4 ms-2"></i>
+              <a
+                class="nav-link text-black fw-semibold link-primary fs-5"
+                href="#"
+                >Messages</a
+              >
+            </li>
+
+            <div class="d-flex fs-5 mx-3">
+              <button
+                class="d-flex justify-content-around align-items-center btn btn-outline-primary py-1"
+              >
+                <img src="images/person.png" alt="" width="35" height="35" />
+                <span class="ms-2">laila</span>
+              </button>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav ms-auto d-flex">
+          <li class="nav-item">
+            <a
+              class="nav-link text-black fw-semibold active link-primary fs-5 border-bottom"
+              aria-current="page"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-black fw-semibold link-primary fs-5 border-bottom"
+              href="#"
+              >About Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-black fw-semibold link-primary fs-5 border-bottom"
+              href="#"
+              >Contact</a
+            >
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <i class="bi bi-globe2 mx-2"></i>
+            <a
+              class="nav-link text-black fw-semibold link-primary fs-5 border-bottom"
+              >English</a
+            >
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <i class="bi bi-wechat ms-2"></i>
+            <a
+              class="nav-link text-black fw-semibold link-primary fs-5 border-bottom"
+              href="#"
+              >Messages</a
+            >
+          </li>
+
+          <div class="d-flex fs-5 mx-3">
+            <button
+              class="d-flex justify-content-around align-items-center btn btn-outline-primary py-1"
+            >
+              <img src="images/person.png" alt="" width="30" height="30" />
+              <span class="ms-2">laila</span>
+            </button>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <section class="no-result py-6">
+      <div class="container">
+        <div class="row">
+          <button
+            class="btn btn-link d-md-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight1"
+            aria-controls="offcanvasRight"
+          >
+            <i
+              class="bi bi-filter-square-fill text-primary fs-1 d-flex justify-content-end p-0"
+            ></i>
+          </button>
+          <div class="col-12 col-lg-5 col-xl-3 border p-4 d-sm-block d-none">
+            <div>
+              <h4>Search</h4>
+              <input
+                type="text"
+                class="form-control my-2"
+                placeholder="Search for a applicant "
+              />
+              <div class="text-end">
+                <span class="text-primary fw-semibold">10</span>
+                <span class="text-black fw-semibold"> applicants found</span>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-between mt-2">
+              <h4 class="text-black">Filters</h4>
+              <a href="" class="text-primary fw-semibold">Clear all filters</a>
+            </div>
+
+            <!-- <h5>Country</h5>
+          <input type="select" class="form-control my-2" placeholder="Select country "> -->
+
+            <h5>Country</h5>
+            <select
+              id="country"
+              name="country"
+              class="w-100 p-2 border-secondary rounded-2 my-2"
+            >
+              <option value="" disabled selected class="text-primary">
+                Select a country
+              </option>
+              <option class="text-black" value="Afghanistan">
+                Afghanistan
+              </option>
+              <option class="text-black" value="Åland Islands">
+                Åland Islands
+              </option>
+              <option class="text-black" value="Albania">Albania</option>
+              <option class="text-black" value="Zimbabwe">Zimbabwe</option>
+            </select>
+
+            <h5>City</h5>
+            <select
+              id="country"
+              name="country"
+              class="w-100 p-2 border-secondary rounded-2 my-2"
+            >
+              <option value="" disabled selected class="text-primary">
+                Select city
+              </option>
+              <option class="text-black" value="Afghanistan">
+                Afghanistan
+              </option>
+              <option class="text-black" value="Åland Islands">
+                Åland Islands
+              </option>
+              <option class="text-black" value="Albania">Albania</option>
+              <option class="text-black" value="Zimbabwe">Zimbabwe</option>
+            </select>
+
+            <h5>Nationality</h5>
+            <select
+              id="country"
+              name="country"
+              class="w-100 p-2 border-secondary rounded-2 my-2"
+            >
+              <option value="" disabled selected class="text-primary">
+                Select nationality
+              </option>
+              <option class="text-black" value="Afghanistan">
+                Afghanistan
+              </option>
+              <option class="text-black" value="Åland Islands">
+                Åland Islands
+              </option>
+              <option class="text-black" value="Albania">Albania</option>
+              <option class="text-black" value="Zimbabwe">Zimbabwe</option>
+            </select>
+
+            <h5>Job category</h5>
+            <select
+              id="country"
+              name="country"
+              class="w-100 p-2 border-secondary rounded-2 my-2"
+            >
+              <option value="" disabled selected class="text-primary">
+                Select category
+              </option>
+              <option class="text-black" value="Afghanistan">
+                Afghanistan
+              </option>
+              <option class="text-black" value="Åland Islands">
+                Åland Islands
+              </option>
+              <option class="text-black" value="Albania">Albania</option>
+              <option class="text-black" value="Zimbabwe">Zimbabwe</option>
+            </select>
+            <h5>Language</h5>
+            <select
+              id="country"
+              name="country"
+              class="w-100 p-2 border-secondary rounded-2 my-2"
+            >
+              <option value="" disabled selected class="text-primary">
+                Select language
+              </option>
+              <option class="text-black" value="Afghanistan">Arabic</option>
+              <option class="text-black" value="Åland Islands">English</option>
+            </select>
+
+            <h5>Career level</h5>
+            <div class="d-flex flex-wrap align-items-center row">
+              <div class="col-sm-6 col-12">
+                <input
+                  type="select"
+                  class="form-control my-2"
+                  placeholder="Student"
+                />
+              </div>
+              <div class="col-sm-6 col-12">
+                <input
+                  type="select"
+                  class="form-control my-2"
+                  placeholder="Experienced"
+                />
+              </div>
+              <div class="col-sm-6 col-12">
+                <input
+                  type="select"
+                  class="form-control my-2"
+                  placeholder="Fresh graduate"
+                />
+              </div>
+            </div>
+
+            <h5>Job type</h5>
+            <div class="d-flex flex-wrap align-items-center row">
+              <div class="col-sm-6 col-12">
+                <input
+                  type="select"
+                  class="form-control my-2"
+                  placeholder="Internship"
+                />
+              </div>
+              <div class="col-sm-6 col-12">
+                <input
+                  type="select"
+                  class="form-control my-2"
+                  placeholder="Part time"
+                />
+              </div>
+              <div class="col-sm-6 col-12">
+                <input
+                  type="select"
+                  class="form-control my-2"
+                  placeholder="Freelance"
+                />
+              </div>
+              <div class="col-sm-6 col-12">
+                <input
+                  type="select"
+                  class="form-control my-2"
+                  placeholder="Full time"
+                />
+              </div>
+            </div>
+
+            <h5>Gender</h5>
+            <div class="d-flex flex-wrap align-items-center row">
+              <div class="col-sm-6 col-12">
+                <input
+                  type="select"
+                  class="form-control my-2"
+                  placeholder="Male"
+                />
+              </div>
+              <div class="col-sm-6 col-12">
+                <input
+                  type="select"
+                  class="form-control my-2"
+                  placeholder="Female"
+                />
+              </div>
+            </div>
+
+            <h5>Work type</h5>
+            <div class="d-flex flex-wrap align-items-center row">
+              <div class="col-sm-6 col-12">
+                <input
+                  type="select"
+                  class="form-control my-2"
+                  placeholder="Remote"
+                />
+              </div>
+              <div class="col-sm-6 col-12">
+                <input
+                  type="select"
+                  class="form-control my-2"
+                  placeholder="Hybrid"
+                />
+              </div>
+              <div class="col-sm-6 col-12">
+                <input
+                  type="select"
+                  class="form-control my-2"
+                  placeholder="Remote"
+                />
+              </div>
+            </div>
+
+            <h5>Years of experience</h5>
+            <div class="d-flex flex-wrap align-items-center row">
+              <div class="col-sm-6 col-12">
+                <input
+                  type="select"
+                  class="form-control my-2"
+                  placeholder="0"
+                />
+              </div>
+              <div class="col-sm-6 col-12">
+                <input
+                  type="select"
+                  class="form-control my-2"
+                  placeholder="30"
+                />
+              </div>
+            </div>
+
+            <h5>Monthly salary</h5>
+            <div class="d-flex flex-wrap align-items-center row">
+              <div class="col-sm-6 col-12">
+                <input
+                  type="select"
+                  class="form-control my-2"
+                  placeholder="0 $"
+                />
+              </div>
+              <div class="col-sm-6 col-12">
+                <input
+                  type="select"
+                  class="form-control my-2"
+                  placeholder="30 $"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- sidebar -->
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasRight1"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="col-12 col-lg-5 col-xl-3 border p-4 d-sm-block d-none">
+                <div>
+                  <h4>Search</h4>
+                  <input
+                    type="text"
+                    class="form-control my-2"
+                    placeholder="Search for a applicant "
+                  />
+                  <div class="text-end">
+                    <span class="text-primary fw-semibold">10</span>
+                    <span class="text-black fw-semibold"> applicants found</span>
+                  </div>
+                </div>
+    
+                <div class="d-flex align-items-center justify-content-between mt-2">
+                  <h4 class="text-black">Filters</h4>
+                  <a href="" class="text-primary fw-semibold">Clear all filters</a>
+                </div>
+    
+                <!-- <h5>Country</h5>
+              <input type="select" class="form-control my-2" placeholder="Select country "> -->
+    
+                <h5>Country</h5>
+                <select
+                  id="country"
+                  name="country"
+                  class="w-100 p-2 border-secondary rounded-2 my-2"
+                >
+                  <option value="" disabled selected class="text-primary">
+                    Select a country
+                  </option>
+                  <option class="text-black" value="Afghanistan">
+                    Afghanistan
+                  </option>
+                  <option class="text-black" value="Åland Islands">
+                    Åland Islands
+                  </option>
+                  <option class="text-black" value="Albania">Albania</option>
+                  <option class="text-black" value="Zimbabwe">Zimbabwe</option>
+                </select>
+    
+                <h5>City</h5>
+                <select
+                  id="country"
+                  name="country"
+                  class="w-100 p-2 border-secondary rounded-2 my-2"
+                >
+                  <option value="" disabled selected class="text-primary">
+                    Select city
+                  </option>
+                  <option class="text-black" value="Afghanistan">
+                    Afghanistan
+                  </option>
+                  <option class="text-black" value="Åland Islands">
+                    Åland Islands
+                  </option>
+                  <option class="text-black" value="Albania">Albania</option>
+                  <option class="text-black" value="Zimbabwe">Zimbabwe</option>
+                </select>
+    
+                <h5>Nationality</h5>
+                <select
+                  id="country"
+                  name="country"
+                  class="w-100 p-2 border-secondary rounded-2 my-2"
+                >
+                  <option value="" disabled selected class="text-primary">
+                    Select nationality
+                  </option>
+                  <option class="text-black" value="Afghanistan">
+                    Afghanistan
+                  </option>
+                  <option class="text-black" value="Åland Islands">
+                    Åland Islands
+                  </option>
+                  <option class="text-black" value="Albania">Albania</option>
+                  <option class="text-black" value="Zimbabwe">Zimbabwe</option>
+                </select>
+    
+                <h5>Job category</h5>
+                <select
+                  id="country"
+                  name="country"
+                  class="w-100 p-2 border-secondary rounded-2 my-2"
+                >
+                  <option value="" disabled selected class="text-primary">
+                    Select category
+                  </option>
+                  <option class="text-black" value="Afghanistan">
+                    Afghanistan
+                  </option>
+                  <option class="text-black" value="Åland Islands">
+                    Åland Islands
+                  </option>
+                  <option class="text-black" value="Albania">Albania</option>
+                  <option class="text-black" value="Zimbabwe">Zimbabwe</option>
+                </select>
+                <h5>Language</h5>
+                <select
+                  id="language"
+                  name="language"
+                  class="w-100 p-2 border-secondary rounded-2 my-2"
+                >
+                  <option value="" disabled selected class="text-primary">
+                    Select language
+                  </option>
+                  <option class="text-black" value="Afghanistan">Arabic</option>
+                  <option class="text-black" value="Åland Islands">English</option>
+                </select>
+    
+                <h5>Career level</h5>
+                <div class="d-flex flex-wrap align-items-center row">
+                  <div class="col-sm-6 col-12">
+                    <input
+                      type="select"
+                      class="form-control my-2"
+                      placeholder="Student"
+                    />
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <input
+                      type="select"
+                      class="form-control my-2"
+                      placeholder="Experienced"
+                    />
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <input
+                      type="select"
+                      class="form-control my-2"
+                      placeholder="Fresh graduate"
+                    />
+                  </div>
+                </div>
+    
+                <h5>Job type</h5>
+                <div class="d-flex flex-wrap align-items-center row">
+                  <div class="col-sm-6 col-12">
+                    <input
+                      type="select"
+                      class="form-control my-2"
+                      placeholder="Internship"
+                    />
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <input
+                      type="select"
+                      class="form-control my-2"
+                      placeholder="Part time"
+                    />
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <input
+                      type="select"
+                      class="form-control my-2"
+                      placeholder="Freelance"
+                    />
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <input
+                      type="select"
+                      class="form-control my-2"
+                      placeholder="Full time"
+                    />
+                  </div>
+                </div>
+    
+                <h5>Gender</h5>
+                <div class="d-flex flex-wrap align-items-center row">
+                  <div class="col-sm-6 col-12">
+                    <input
+                      type="select"
+                      class="form-control my-2"
+                      placeholder="Male"
+                    />
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <input
+                      type="select"
+                      class="form-control my-2"
+                      placeholder="Female"
+                    />
+                  </div>
+                </div>
+    
+                <h5>Work type</h5>
+                <div class="d-flex flex-wrap align-items-center row">
+                  <div class="col-sm-6 col-12">
+                    <input
+                      type="select"
+                      class="form-control my-2"
+                      placeholder="Remote"
+                    />
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <input
+                      type="select"
+                      class="form-control my-2"
+                      placeholder="Hybrid"
+                    />
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <input
+                      type="select"
+                      class="form-control my-2"
+                      placeholder="Remote"
+                    />
+                  </div>
+                </div>
+    
+                <h5>Years of experience</h5>
+                <div class="d-flex flex-wrap align-items-center row">
+                  <div class="col-sm-6 col-12">
+                    <input
+                      type="select"
+                      class="form-control my-2"
+                      placeholder="0"
+                    />
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <input
+                      type="select"
+                      class="form-control my-2"
+                      placeholder="30"
+                    />
+                  </div>
+                </div>
+    
+                <h5>Monthly salary</h5>
+                <div class="d-flex flex-wrap align-items-center row">
+                  <div class="col-sm-6 col-12">
+                    <input
+                      type="select"
+                      class="form-control my-2"
+                      placeholder="0 $"
+                    />
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <input
+                      type="select"
+                      class="form-control my-2"
+                      placeholder="30 $"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-7 col-xl-9">
+            <div
+              class="d-flex justify-content-center align-items-center flex-column"
+              style="height: 100vh"
+            >
+              <div style="position: relative; text-align: center">
+                <img
+                  src="images/5481505_2808163 1.png"
+                  alt=""
+                  class="position-relative"
+                  style="max-width: 100%"
+                />
+              </div>
+
+              <div class="mt-5 text-center">
+                <h3 class="text-primary">No results found</h3>
+                <span class="text-primary"
+                  >Try changing the filters or search term</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----- Footer ----->
+    <footer class="footer bg-primary py-4" id="footer">
+      <div class="container">
+        <div class="row gy-3">
+          <!-- Start content Footer -->
+            <div class="col-lg-4 col-md-6 footer-links text-white">
+              <h2 class=" fw-bold position-relative cursor-pointer">Talentak  </h2>
+              <h6 class="fw-normal">“Lorem ipsum dolor sit amet, 
+                consectetur elit nisi adipiscing” </h6>
+  
+                <h4 class="mt-4">Find us on Social media</h4>
+              <div class="social-links d-flex ">
+                <a href="#" class="d-flex align-items-center justify-content-center rounded-5 me-2 twitter fs-5"><i class="bi bi-twitter"></i></a>
+                <a href="" class="d-flex align-items-center justify-content-center rounded-5 me-2 linkedin fs-5" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="" class="d-flex align-items-center justify-content-center rounded-5 me-2 facebook fs-5" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="" class="d-flex align-items-center justify-content-center rounded-5 me-2 instagram fs-5" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="" class="d-flex align-items-center justify-content-center rounded-5 me-2 whatsapp fs-5" target="_blank"><i class="bi bi-whatsapp"></i></a>
+              
+                <a href="" class="d-flex align-items-center justify-content-center rounded-5 me-2 twitter fs-5"><i class="bi bi-google"></i></a>
+              </div>
+            </div>
+    
+            
+          <div class="col-lg-2 col-md-6 d-flex text-white">
+            <div>
+              <h4 class="fs-5 fw-bold position-relative border-bottom border-3">Services</h4>
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Development</h6>
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Design and arts</h6>
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Writing & Translation</h6>
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Video & animation</h6>
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Digital marketing</h6>
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Business</h6>
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Photography</h6>
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Music & Audio</h6>
+  
+            </div>
+          </div>
+          <!-- Start content Footer -->
+            <div class="col-lg-2 col-md-6 footer-links d-flex text-white">
+              <div>
+                <h4 class="fs-5 fw-bold position-relative border-bottom border-3">About</h4>
+              <a href="aboutUspage.html" class="text-white text-decoration-none">
+                <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer text-white">About us</h6>
+              </a> 
+                
+  
+              </div>
+            </div>
+  
+          <!-- Start content Footer -->
+          <div class="col-lg-2 col-md-6 footer-links d-flex text-white">
+            <div>
+              <h4 class="fs-5 fw-bold position-relative border-bottom border-3">Contact us</h4>
+            <a href="contactUspage.html"  class="text-white text-decoration-none">
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Contact Us</h6>
+            </a>
+            <a href="terms.html" class="text-white text-decoration-none">
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Terms & Conditions</h6>
+            </a>
+            <a href="privacy.html" class="text-white text-decoration-none">
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Privacy Policy</h6>
+            </a>
+  
+            </div>
+          </div>
+  
+        
+      </div>
+      </div>
+  
+      <!-- start copyright -->
+      <div class="container text-center fs-6">
+        <div class="copyright">
+          <a href="" class="text-white text-decoration-none">© 2023 ProductName. All rights reserved.</a>
+        </div>
+      </div>
+  
+  
+    </footer>
+    <!-- End Footer -->
+
+
+
+    <!-- JS Files -->
+
+    <!-- bootstrap js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- swiper js file -->
+    <script src="assets/swiper/swiper-bundle.min.js"></script>
+    <!-- main js file -->
+    <script src="js/script.js"></script>
+    <script src="js/backtotop.js"></script>  </body>
+</html>
+

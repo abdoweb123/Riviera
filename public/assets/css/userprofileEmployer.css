@@ -1,0 +1,57 @@
+.section-user-profile-employer .img-one-user-profile {
+  width: 150px;
+  height: 150px;
+}
+.section-user-profile-employer .card-text {
+  margin-bottom: -2px;
+}
+.section-user-profile-employer .img-two-user-profile {
+  width: 300px;
+  height: 300px;
+}
+.section-user-profile-employer h5 {
+  margin-bottom: 1px;
+}
+.section-user-profile-employer .img-icon {
+  width: 24px;
+  height: 24px;
+}
+.section-user-profile-employer .fs-5 {
+  margin-bottom: 3px;
+}
+.section-user-profile-employer #list-item-4 h5 {
+  margin-bottom: -4px;
+}
+.section-user-profile-employer #list-item-4 h6 {
+  margin-bottom: 1px;
+}
+.section-user-profile-employer #list-item-8 h6 {
+  margin-bottom: 1px;
+}
+
+.modal-lg {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+.modal-lg::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.modal-lg::-webkit-scrollbar-track {
+  background: transparent;
+}
+.modal-lg::-webkit-scrollbar-thumb {
+  background: #3685B5;
+  border-radius: 30px;
+}
+
+.cv {
+  color: #576C7A !important;
+}
+.cv h3 {
+  color: #576C7A !important;
+}
+
+.img-model-no-resume {
+  width: 200px;
+  height: 200px;
+}

@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Files -->
+  <!-- bootstrap css file -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <!-- bootstrap-icon css file -->
+  <link rel="stylesheet" href="assets/bootstrap-icon/bootstrap-icons.css">
+  <!-- swiper css file -->
+  <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- favicon -->
+  <link rel="icon" href="{{ asset(setting('logo')) }}">
+
+  <title> Talentak Website</title>
+</head>
+
+<body>
+
+    <!--====== BACK TO TP PART START ======-->
+    <button
+    type="button"
+    class="btn-back-to-top btn btn-primary text-white rounded-circle py-2 px-2"
+    >
+    <i class="bi bi-chevron-double-up"></i></button>   
+    
+      <a href="https://wa.me/+97334479384" class="whats-app" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Whatsapp">
+        <i class="bi bi-whatsapp my-float"></i>
+    </a>
+  </a>
+    <!--====== BACK TO TP PART ENDS ======-->
+
+  <!------- Header ------->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-lg d-flex align-items-center justify-content-between">
+      <a  href="index.html"><img src="{{ asset(setting('logo')) }}" alt="" class="nav-logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav  ms-auto d-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link text-black fw-semibold active link-primary fs-5" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black fw-semibold link-primary fs-5" href="aboutUspage.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black fw-semibold link-primary fs-5" href="contactUspage.html">Contact</a>
+          </li>
+            <div class="dropdown">
+              <li class="nav-item d-flex align-items-center">
+              <i class="bi bi-search-heart ms-2"></i>
+              <a class="nav-link text-black fw-semibold link-primary  fs-5" type="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Views</a>
+            
+              <ul class="dropdown-menu">
+                <li class="text-black fw-semibold fs-5 mx-3">Profile views</li>
+                <li><a class="dropdown-item" href="#">
+                <div>
+              <div class="friend-drawer friend-drawer--onhover">
+                <img class="profile-image" src="images/chat2.png" alt="" width="50" height="50">
+                <div class="text">
+                  <h6>Ayman Nagy</h6>
+                  <p class="text-muted">Works at Emcan</p>
+                </div>
+                <span class="time text-muted small">Viewed 5 hrs ago</span>
+              </div>
+                </div>
+              </a>
+            </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                <div>
+              <div class="friend-drawer friend-drawer--onhover">
+                <img class="profile-image" src="images/chat1.png" alt="" width="50" height="50">
+                <div class="text">
+                  <h6>Ayman Nagy</h6>
+                  <p class="text-muted">Works at Emcan</p>
+                </div>
+                <span class="time text-muted small">Viewed 5 hrs ago</span>
+              </div>
+
+                </div>
+              </a>
+            </li>
+                <li><a class="dropdown-item" href="#">
+                <div>
+              <div class="friend-drawer friend-drawer--onhover">
+                <img class="profile-image" src="images/chat3.png" alt="" width="50" height="50">
+                <div class="text">
+                  <h6>Ayman Nagy</h6>
+                  <p class="text-muted">Works at Emcan</p>
+                </div>
+                <span class="time text-muted small">Viewed 5 hrs ago</span>
+              </div>
+                </div>
+              </a>
+            </li>
+            <div class="d-flex justify-content-center">
+              <a href="" class="text-primary text-center text-decoration-none fw-semibold">See more who viewed your profile</a>
+            </div>
+              </ul>
+            </li>
+            </div>
+
+            <div class="dropdown">
+              <li class="nav-item d-flex align-items-center">
+                <i class="bi bi-wechat  fs-4 ms-2"></i>
+                <a class="nav-link text-black fw-semibold link-primary fs-5" href="#" type="button" data-bs-toggle="dropdown" aria-expanded="false">Messages</a>
+            
+              <ul class="dropdown-menu">
+                <li class="text-black fw-semibold fs-5 mx-3">Chats</li>
+                <li><a class="dropdown-item" href="#">
+                <div>
+              <div class="friend-drawer friend-drawer--onhover">
+                <img class="profile-image" src="images/chat2.png" alt="" width="50" height="50">
+                <div class="text">
+                  <h6>Ayman Nagy</h6>
+                  <p class="text-muted">Works at Emcan</p>
+                </div>
+                <span class="time text-muted small float-end">00:22</span>
+              </div>
+                </div>
+              </a>
+            </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                <div>
+              <div class="friend-drawer friend-drawer--onhover">
+                <img class="profile-image" src="images/chat1.png" alt="" width="50" height="50">
+                <div class="text">
+                  <h6>Ayman Nagy</h6>
+                  <p class="text-muted">Works at Emcan</p>
+                </div>
+                <span class="time text-muted small float-end">00:22</span>
+              </div>
+
+                </div>
+              </a>
+            </li>
+                <li><a class="dropdown-item" href="#">
+                <div>
+              <div class="friend-drawer friend-drawer--onhover">
+                <img class="profile-image" src="images/chat3.png" alt="" width="50" height="50">
+                <div class="text">
+                  <h6>Ayman Nagy</h6>
+                  <p class="text-muted">Works at Emcan</p>
+                </div>
+                <span class="time text-muted small float-end">00:22</span>
+              </div>
+                </div>
+              </a>
+            </li>
+            <div class="d-flex justify-content-center">
+              <a href="" class="text-primary text-center text-decoration-none fw-semibold">See more messages</a>
+            </div>
+              </ul>
+            </li>
+            </div>
+        
+          <li class="nav-item d-flex align-items-center">
+            <i class="bi bi-globe2 mx-2"></i>
+            <a class="fw-semibold text-decoration-none text-black fs-5">English</a>
+          </li>
+
+
+          
+          <div class="dropdown">
+            <div class="d-flex fs-5 mx-3">
+              <button class="d-flex justify-content-around  align-items-center btn btn-outline-primary py-1 px-2"  type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/chat1.png" alt="" width="40" height="40"> <span class="ms-2">Adam</span></button>
+          
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">
+            
+              <div class="text">
+                <h6 class="text-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">Reviews</h6>
+                
+                <hr/>
+                <h6 class="text-primary">Logout</h6>
+              </div>
+          
+              
+            </a>
+          </li>
+            
+            </ul>
+          </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Modal -->
+<div class="modal fade cv" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <button type="button" class="btn-close text-primary" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body text-center">
+        <h5 class="text-primary">Review <span class="text-black">us</span></h5>
+        <p class="text-secondary">Write your feedback and share it with others</p>
+      </div>
+      <div class="modal-body">
+        <h5 class="text-black">Rating</h5>
+        <div class="d-flex">
+          <i class="bi bi-star mx-1 fs-4 text-black"></i>
+          <i class="bi bi-star mx-1 fs-4 text-black"></i>
+          <i class="bi bi-star mx-1 fs-4 text-black"></i>
+          <i class="bi bi-star mx-1 fs-4 text-black"></i>
+          <i class="bi bi-star mx-1 fs-4 text-black"></i>
+        </div>
+        <label for="" class="fs-5 text-black">Write your review</label>
+        <textarea name="" id="" cols="30" rows="4" class="form-control" placeholderType your review...></textarea>
+      </div>
+      <button class="btn btn-primary mt-4 py-1 px-5 text-white mb-3">Submit review</button>
+    
+    </div>
+  </div>
+</div>
+<!-- end modal  -->
+  <!--===== start offcanvas sidebar responsive ====== -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav  ms-auto d-flex ">
+        <li class="nav-item">
+          <a class="nav-link text-black fw-semibold active link-primary fs-5 border-bottom" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black fw-semibold link-primary fs-5 border-bottom" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black fw-semibold link-primary fs-5 border-bottom" href="#">Contact</a>
+        </li>
+        <li class="nav-item d-flex align-items-center">
+          <i class="bi bi-search-heart ms-2"></i>
+          <a class="nav-link text-black fw-semibold link-primary fs-5 border-bottom" href="#">Views</a>
+        </li>
+        <li class="nav-item d-flex align-items-center">
+          <i class="bi bi-wechat  fs-4 ms-2"></i>
+          <a class="nav-link text-black fw-semibold link-primary fs-5 border-bottom" href="#">Messages</a>
+        </li>
+        <li class="nav-item d-flex align-items-center">
+          <i class="bi bi-globe2 mx-2"></i>
+          <a class="nav-link text-black fw-semibold link-primary fs-5 border-bottom">English</a>
+        </li>
+        <div class="d-flex fs-5 mx-3">
+          <button class="d-flex justify-content-around  align-items-center btn btn-outline-primary py-1"><img src="images/chat1.png" alt="" width="30" height="30"> <span class="ms-2">Adam</span></button>
+        </div>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Start contactUs Section -->
+  <section class="section-user-profile-employer py-5">
+    <!-- btn siderbar items -->
+    <div class="float-end">
+      <button  class="btn btn-link d-md-none"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight">
+        <i class="bi bi-filter-square-fill text-primary fs-1 d-flex justify-content-end p-0"></i>
+      </button>
+    </div>
+    <!-- End btn siderbar items -->
+    <div class="container">
+      <!-- ======= start card one ====== -->
+      <div class="card border-primary border-2 w-100">
+        <div class="position-relative mx-4 ">
+        <a href="">
+          <i class="bi bi-pencil-fill  position-absolute text-black top-0 end-0 text-center justify-content-center align-items-center d-flex mt-3 fst-normal"><span class="mx-2">Edit</span></i>
+        </a> 
+        </div>
+        <div class="card-body d-flex align-items-center">
+          <div class="image-container">
+            <img src="images/userprofileimployer.png" alt="" class="img-one-user-profile">
+          </div>
+          <div class="text-container mx-3">
+            <h5 class="card-title">Laila Ali</h5>
+            <p class="card-text text-info">Software Engineer</p>
+            <div class="d-flex">
+              <i class="bi bi-geo-alt-fill text-primary"></i>
+              <p class="text-secondary mx-2">Riyadh, Saudi Arabia</p>
+            </div>
+            <a href="#" class="btn btn-primary text-white py-1 my-1 my-sm-0">Message</a>
+            <a href="#" class="btn btn-outline-primary py-1 my-1 my-sm-0">Show resume</a>
+          </div>
+        </div>
+      </div>
+    <!-- ======= end card one ====== -->
+
+    <!-- ======= start card two ====== -->
+    <div class="row mt-4">
+    
+      <div class="col-12 col-lg-5 col-xl-3 border p-4 d-sm-block d-none border-primary rounded-3 h-100">
+      
+        <div id="list-example" class="list-group border-0">
+          <a class="list-group-item list-group-item-action border-0" href="#list-item-1">Introduction video & Bio</a>
+          <a class="list-group-item list-group-item-action border-0" href="#list-item-2">Personal information</a>
+          <a class="list-group-item list-group-item-action border-0" href="#list-item-5">Professional information</a>
+          <a class="list-group-item list-group-item-action border-0" href="#list-item-3">Experience</a>
+          <a class="list-group-item list-group-item-action border-0" href="#list-item-6">Skills</a>
+          <a class="list-group-item list-group-item-action border-0" href="#list-item-7">Job type</a>
+          <a class="list-group-item list-group-item-action border-0" href="#list-item-8">Work type</a>
+          <a class="list-group-item list-group-item-action border-0" href="#list-item-9">Languages</a>
+          <a class="list-group-item list-group-item-action border-0" href="#list-item-4">Education</a>
+          <a class="list-group-item list-group-item-action border-0" href="#list-item-10">Courses</a>
+          <a class="list-group-item list-group-item-action border-0" href="#list-item-2">Contacts</a>
+        </div>
+
+      </div>
+
+      <!--=========== End sidebar Filter =========-->
+
+
+
+
+<!-- =======  Start section cards ===== -->
+      <div class="col-12 col-lg-7 col-xl-9">
+      
+        <!-- ========  start cards ======= -->
+        <div class="row g-4">
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+
+            <!-- ===========start card two ========= -->
+        <div class="card border-primary border-2 mb-4" id="list-item-1">
+      <!-- ==========    icon edit ======= -->
+          <div class="position-relative mx-4 ">
+            <a href="">
+              <i class="bi bi-pencil-fill  position-absolute text-black top-0 end-0 text-center justify-content-center align-items-center d-flex mt-3 fst-normal"><span class="mx-2">Edit</span></i>
+            </a> 
+            </div>
+            <div class="card-body d-flex flex-column flex-sm-row text-center text-sm-start">
+              <div class="image-container">
+                <img src="images/userprofile2.png" alt="" class="img-two-user-profile rounded-3">
+              </div>
+              <div class="text-container mx-4 mt-3">
+                <h3 class="card-title text-primary">Bio</h3>
+                <p class="card-text text-info mt-2">I am a person who is energetic, self-motivated, dependable, responsible, and hardworking. I am a seasoned team player who can adjust to any demanding scenario. I can operate well in a collaborative setting as well as on my own initiative. I can operate well under pressure and meet tight deadlines.</p>
+                </div>
+            </div>
+          </div>
+        
+          <!--=========== End card two ========= -->
+
+
+
+
+
+              <!-- ===========start card two ========= -->
+        <div class="card border-primary border-2  mb-4" id="list-item-2">
+          <!-- ===icon edit ====== -->
+          <div class="position-relative mx-4 ">
+            <a href="applicantpersonaledit.html">
+              <i class="bi bi-pencil-fill  position-absolute text-black top-0 end-0 text-center justify-content-center align-items-center d-flex mt-3 fst-normal"><span class="mx-2">Edit</span></i>
+            </a> 
+            </div>
+          <div class="card-body d-flex flex-column flex-sm-row text-center text-sm-start">
+            
+            <div class="text-container mx-4 mt-2 row">
+              <h3 class="card-title text-primary fw-medium">Personal information</h3>
+            
+              <div class="col-sm-12">
+              <div class="mt-3 d-flex justify-content-between row">
+                <div class="d-flex flex-column col-sm-4">
+                  <h6 class="fs-5">Location</h6>
+                  <div class="d-flex justify-content-sm-start">
+                    <img src="images/map_icon 1.png" alt="" class="img-icon">
+                    <p class="text-info mx-2">Riyadh, Saudi Arabia</p>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column col-sm-4">
+                  <h6 class="fs-5">Marital status</h6 class="fs-5">
+                  <div class="d-flex justify-content-sm-start">
+                    <img src="images/map_icon 1.png" alt="" class="img-icon">
+                    <p class="text-info mx-2">Single</p>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column col-sm-4">
+                  <h6 class="fs-5">Nationality</h6 class="fs-5">
+                  <div class="d-flex justify-content-sm-start">
+                    <img src="images/icon2.png" alt="" class="img-icon">
+                    <p class="text-info mx-2">Saudi</p>
+                  </div>
+                </div>
+
+
+                <div class="d-flex flex-column col-sm-4">
+                  <h6 class="fs-5">Gender</h6 class="fs-5">
+                  <div class="d-flex justify-content-sm-start">
+                    <img src="images/icon3.png" alt="" class="img-icon">
+                    <p class="text-info mx-2">Female</p>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column col-sm-4">
+                  <h6 class="fs-5">Birthdate</h6 class="fs-5">
+                  <div class="d-flex justify-content-sm-start">
+                    <img src="images/icon 4.png" alt="" class="img-icon">                   
+                    <p class="text-info mx-2">25 May 1999</p>
+                  </div>
+                </div>
+
+
+              </div>
+              </div>
+
+              <!-- start contacts  -->
+              <h3 class="card-title text-primary fw-medium">Contacts</h3>
+              <!-- start row contacts -->
+              <div class="row">
+                <div class="12">
+                  <div class="d-flex flex-column">
+                    <h6 class="mt-3">Phone number</h6>
+                    <div class="d-flex">
+                      <img src="images/local_phone_icon5.png" alt="" class="img-icon">
+                      <p class="text-black mx-2">+966123456789</p>
+                    </div>
+                  </div>
+  
+                  <div class="d-flex flex-column">
+                    <h6 class="mt-3">Alternative phone number</h6>
+                    <div class="d-flex">
+                      <img src="images/local_phone_icon5.png" alt="" class="img-icon">
+                      <p class="text-black mx-2">+966123456789</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <h6 class="mt-3">Emails</h6>
+                    <div class="d-flex">
+                      <img src="images/icon6.png" alt="" class="img-icon">
+                    <a href="" class="text-black mx-2 text-decoration-none cursor-pointer">Example@gmail.com</a>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <h6 class="mt-3">Social networks</h6>
+                    <div class="d-flex my-1">
+                      <img src="images/icon7.png" alt="" class="img-icon">
+                      <a class="text-black mx-2 text-decoration-none cursor-pointer">https://www.linkedin.com/in/example-team-b36420292/</a>
+                    </div>
+                    <div class="d-flex my-1">
+                      <img src="images/icon8.png" alt="" class="img-icon">
+                      <a class="text-black mx-2 text-decoration-none cursor-pointer">https://www.facebook.com/example</a>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+
+              </div>
+          </div>
+        </div>
+        <!--=========== End card two ========= -->
+
+
+    <!-- ======  start card three ======== -->
+    <div class="card border-primary border-2  mb-4" id="list-item-3">
+            
+      <div class="card-body d-flex flex-column flex-sm-row text-center text-sm-start">
+        
+        <div class="text-container mx-4 mt-2 row">
+          <h3 class="card-title text-primary fw-medium">Experience</h3>
+            <!-- start row Experience -->
+            <div class="d-flex flex-column ">
+              <div class="d-flex flex-row justify-content-between row">
+                <div class="col-sm-9">
+
+                  <h6 class="mt-3">Java developer | Emcan</h6>
+                </div>
+                <div class="col-sm-3 text-end float-end">
+
+                  <div class="position-relative mx-4 d-flex justify-content-between align-items-center mt-3">
+                    <a href="" class="text-decoration-none mx-2">
+                      <i class="bi bi-pencil-fill text-black text-center justify-content-center align-items-center d-flex fst-normal"><span class="mx-2">Edit</span></i>
+                    </a>
+                      <!-- Button trigger modal -->
+                      <a href="#" class="text-decoration-none mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="bi bi-trash3-fill text-black text-center justify-content-center align-items-center d-flex fst-normal"><span class="mx-2">Remove</span></i>
+                      </a>
+    
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Are you sure? </h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                              This action will remove the your education detail "faculty of science" 
+                              Are you certain you want to remove this this education detail?
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary rounded-3 py-1 text-white" >Delete</button>
+                              <button type="button" class="btn btn-outline-primary rounded-3 py-1" data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              
+              <h6 class="fw-normal fs-6">October 2020 - present</h6>
+              <span class="text-info">Alexandria, Egypt - Remote</span>
+              <span class="text-secondary">Full time</span>
+            </div>
+            <!-- start row Experience -->
+            <div class="d-flex flex-column ">
+              <div class="d-flex flex-row justify-content-between row">
+                <div class="col-sm-9">
+
+                  <h6 class="mt-3">Java developer | Emcan</h6>
+                </div>
+                <div class="col-sm-3 text-end float-end">
+
+                  <div class="position-relative mx-4 d-flex justify-content-between align-items-center mt-3">
+                    <a href=""  class="text-decoration-none mx-2">
+                      <i class="bi bi-pencil-fill text-black text-center justify-content-center align-items-center d-flex fst-normal"><span class="mx-2">Edit</span></i>
+                    </a>
+                      <!-- Button trigger modal -->
+                      <a href="#" class="text-decoration-none mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="bi bi-trash3-fill text-black text-center justify-content-center align-items-center d-flex fst-normal"><span class="mx-2">Remove</span></i>
+                      </a>
+    
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Are you sure? </h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                              This action will remove the your education detail "faculty of science" 
+                              Are you certain you want to remove this this education detail?
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary rounded-3 py-1 text-white" >Delete</button>
+                              <button type="button" class="btn btn-outline-primary rounded-3 py-1" data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              
+              <h6 class="fw-normal fs-6">October 2020 - present</h6>
+              <span class="text-info">Alexandria, Egypt - Remote</span>
+              <span class="text-secondary">Full time</span>
+           </div>
+    
+          </div>
+      </div>
+    </div>
+<!-- ======  start card three ======== -->
+
+        
+
+
+          <!-- =======  start card four ======= -->
+          <div class="card border-primary border-2  mb-4" id="list-item-4">
+            <div class="card-body d-flex flex-column flex-sm-row text-center text-sm-start">
+              
+              <div class="text-container mx-4 mt-2 row">
+                <h3 class="card-title text-primary fw-medium">Education</h3>
+                  <!-- start row Education -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="d-flex flex-column">
+                  <h5 class="mt-3 text-primary">Schools </h5>
+                  <div class="d-flex flex-row justify-content-between row">
+                    <div class="col-sm-9">
+                  <h6 class="mt-3">Forstan international  School</h6>
+                  </div>
+                  <div class="col-sm-3 text-end float-end">
+    
+                    <div class="position-relative mx-4 d-flex justify-content-between align-items-center mt-3">
+                      <a href=""  class="text-decoration-none mx-2">
+                        <i class="bi bi-pencil-fill text-black text-center justify-content-center align-items-center d-flex fst-normal"><span class="mx-2">Edit</span></i>
+                      </a>
+                        <!-- Button trigger modal -->
+                        <a href="#" class="text-decoration-none mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          <i class="bi bi-trash3-fill text-black text-center justify-content-center align-items-center d-flex fst-normal"><span class="mx-2">Remove</span></i>
+                        </a>
+      
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Are you sure? </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body text-center">
+                                This action will remove the your education detail "faculty of science" 
+                                Are you certain you want to remove this this education detail?
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary rounded-3 py-1 text-white" >Delete</button>
+                                <button type="button" class="btn btn-outline-primary rounded-3 py-1" data-bs-dismiss="modal">Cancel</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                  <span class="text-info">American | October 2015 - October 2018</span>
+                  <span class="text-secondary fs-7">Alexandria, Egypt</span>
+                </div>
+              </div>
+              <div class="mt-2">
+                <a href="" class="text-decoration-none text-primary fw-semibold">+ Add more school details </a>
+              </div>
+              <!-- end col-md-12 -->
+              <div class="col-md-12">
+                <div class="d-flex flex-column">
+                  <h5 class="mt-3 text-primary">Bachelor degrees </h5>
+                  <div class="d-flex flex-row justify-content-between row">
+                    <div class="col-sm-9">
+                      <h6 class="mt-3">Faculty of science, Alexandria University</h6>
+                  </div>
+                  <div class="col-sm-3 text-end float-end">
+    
+                    <div class="position-relative mx-4 d-flex justify-content-between align-items-center mt-3">
+                      <a href=""  class="text-decoration-none mx-2">
+                        <i class="bi bi-pencil-fill text-black text-center justify-content-center align-items-center d-flex fst-normal"><span class="mx-2">Edit</span></i>
+                      </a>
+                          <!-- Button trigger modal -->
+                          <a href="#" class="text-decoration-none mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-trash3-fill text-black text-center justify-content-center align-items-center d-flex fst-normal"><span class="mx-2">Remove</span></i>
+                          </a>
+        
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Are you sure? </h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                  This action will remove the your education detail "faculty of science" 
+                                  Are you certain you want to remove this this education detail?
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-primary rounded-3 py-1 text-white" >Delete</button>
+                                  <button type="button" class="btn btn-outline-primary rounded-3 py-1" data-bs-dismiss="modal">Cancel</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                  </div>
+                  <span class="text-info">Computer Science | October 2018 - October 2022</span>
+                  <span class="text-secondary fs-7">Grade: Excellent</span>
+                  <div class="d-flex flex-row justify-content-between row">
+                    <div class="col-sm-9">
+                      <h6 class="mt-3">Faculty of science, Alexandria University</h6>
+                  </div>
+                  <div class="col-sm-3 text-end float-end">
+    
+                    <div class="position-relative mx-4 d-flex justify-content-between align-items-center mt-3">
+                      <a href=""  class="text-decoration-none mx-2">
+                        <i class="bi bi-pencil-fill text-black text-center justify-content-center align-items-center d-flex fst-normal"><span class="mx-2">Edit</span></i>
+                      </a>
+                        <!-- Button trigger modal -->
+                        <a href="#" class="text-decoration-none mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          <i class="bi bi-trash3-fill text-black text-center justify-content-center align-items-center d-flex fst-normal"><span class="mx-2">Remove</span></i>
+                        </a>
+      
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Are you sure? </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body text-center">
+                                This action will remove the your education detail "faculty of science" 
+                                Are you certain you want to remove this this education detail?
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary rounded-3 py-1 text-white" >Delete</button>
+                                <button type="button" class="btn btn-outline-primary rounded-3 py-1" data-bs-dismiss="modal">Cancel</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  </div>                  <span class="text-info">Computer Science | October 2018 - October 2022</span>
+                  <span class="text-secondary fs-7">Grade: Excellent</span>
+                </div>
+              </div>
+        
+              <!-- end col-md-12 -->
+            
+              <div class="col-md-12">
+                <div class="d-flex flex-column">
+                  <h5 class="mt-3 text-primary">Masters degrees</h5>
+                  <div class="d-flex flex-row justify-content-between row">
+                    <div class="col-sm-9">
+                      <h6 class="mt-3">Faculty of science, Alexandria University</h6>
+                    </div>
+                  <div class="col-sm-3 text-end float-end">
+    
+                    <div class="position-relative mx-4 d-flex justify-content-between align-items-center mt-3">
+                      <a href=""  class="text-decoration-none mx-2">
+                        <i class="bi bi-pencil-fill text-black text-center justify-content-center align-items-center d-flex fst-normal"><span class="mx-2">Edit</span></i>
+                      </a>
+                        <!-- Button trigger modal -->
+                        <a href="#" class="text-decoration-none mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          <i class="bi bi-trash3-fill text-black text-center justify-content-center align-items-center d-flex fst-normal"><span class="mx-2">Remove</span></i>
+                        </a>
+      
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Are you sure? </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body text-center">
+                                This action will remove the your education detail "faculty of science" 
+                                Are you certain you want to remove this this education detail?
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary rounded-3 py-1 text-white" >Delete</button>
+                                <button type="button" class="btn btn-outline-primary rounded-3 py-1" data-bs-dismiss="modal">Cancel</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                  <span class="text-info">Computer Science | October 2018 - October 2022</span>
+                  <span class="text-secondary fs-7">Grade: Excellent</span>
+                </div>
+              </div>
+              <div class="mt-2">
+                <a href="" class="text-decoration-none text-primary fw-semibold">+ Add more school details </a>
+              </div>
+              <!-- end col-md-12 -->
+              <div class="col-md-12">
+                <div class="d-flex flex-column">
+                  <h5 class="mt-3 text-black">Add your masters </h5>
+                  <div class="d-flex flex-row justify-content-between row">
+                    <div class="col-sm-9">
+                  <div class="d-flex flex-row justify-content-between row">
+                    <div class="col-sm-9">
+                  <h6 class="mt-3">Master Details</h6>
+                  </div>
+                    <div class="col-sm-8 mt-3">
+                      <label for="" class="fw-semibold">School Name</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Forsan international  school</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                  </div>
+                    <div class="col-sm-8 mt-3">
+                      <label for="" class="fw-semibold">Field of Study</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>American</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                  </div>
+                    <div class="col-sm-8 mt-3">
+                      <label for="" class="fw-semibold">University/Institution</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>English</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                  </div>
+                    <div class="col-sm-12 mt-3">
+                      <div class="row mt-3">
+                        <div class="col-sm-4">
+                          <label for="" class="fw-semibold">Starting from</label>
+                          <input type="date" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-sm-4">
+                          <label for="" class="fw-semibold">Ending in</label>
+                          <input type="date" name="" id="" class="form-control">
+    
+                        </div>
+                      </div>
+                  </div>
+
+                    <div class="col-sm-8 mt-3">
+                      <label for="" class="fw-semibold">Grade</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Excellent</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="d-flex justify-content-start mb-4 mt-3">
+                    <button class="btn btn-primary rounded-3 text-white py-1 mx-2">Save</button>
+                    <button class="btn btn-outline-primary rounded-3 py-1 mx-2">Cancel </button>
+                  </div>
+  
+                  <a href="" class="text-decoration-none text-info">+ Add more school details </a>
+                  </div>
+                </div>
+              </div>
+              <!-- end col-md-12 -->
+
+
+              <div class="col-md-12">
+                <div class="d-flex flex-column">
+                  <h5 class="mt-3 text-primary">Doctorate degrees</h5>
+                  <div class="d-flex flex-row justify-content-between row">
+                    <div class="col-sm-9">
+                  <h6 class="mt-3">Faculty of science, Alexandria University</h6>
+                  </div>
+                  <div class="col-sm-3 text-end float-end">
+    
+                    <div class="position-relative mx-4 d-flex justify-content-between align-items-center mt-3">
+                      <a href=""  class="text-decoration-none mx-2">
+                        <i class="bi bi-pencil-fill text-black text-center justify-content-center align-items-center d-flex fst-normal"><span class="mx-2">Edit</span></i>
+                      </a>
+                      <!-- Button trigger modal -->
+                      <a href="#" class="text-decoration-none mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="bi bi-trash3-fill text-black text-center justify-content-center align-items-center d-flex fst-normal"><span class="mx-2">Remove</span></i>
+                      </a>
+    
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Are you sure? </h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                              This action will remove the your education detail "faculty of science" 
+                              Are you certain you want to remove this this education detail?
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary rounded-3 py-1 text-white" >Delete</button>
+                              <button type="button" class="btn btn-outline-primary rounded-3 py-1" data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <span class="text-info">Computer Science | October 2018 - October 2022</span>
+                  <span class="text-secondary fs-7">Grade: Excellent</span>
+                </div>
+              </div>
+              <div class="mt-2">
+                <a href="" class="text-decoration-none text-primary fw-semibold">+ Add more school details </a>
+              </div>
+              <!-- end col-md-12 -->
+
+            </div>
+              
+                </div>
+            </div>
+          </div>
+          <!-- =======  end card four ======= -->
+
+          <!--======= start card five ====== -->
+           <div class="card border-primary border-2  mb-4" id="list-item-5">
+              <!-- ======= edit icon ===== -->
+              <div class="position-relative mx-4 ">
+                <a href="applicantProfessionalinformationedit.html">
+                  <i class="bi bi-pencil-fill  position-absolute text-black top-0 end-0 text-center justify-content-center align-items-center d-flex mt-3 fst-normal"><span class="mx-2">Edit</span></i>
+                </a> 
+                </div>
+            <div class="text-container mx-4 mt-2 row">
+              <h3 class="card-title text-primary fw-medium">Professional information</h3>
+              <div class="col-sm-12">
+                <div class="mt-3 d-flex justify-content-between row">
+                  <div class="d-flex flex-column col-sm-6">
+                    <h6 class="fs-5">Job title</h6>
+                    <div class="d-flex">
+                      <img src="images/icon9.png" alt="" class="img-icon">
+                      <p class="text-info mx-2">Developer</p>
+                    </div>
+                  </div>
+  
+                  <div class="d-flex flex-column col-sm-6">
+                    <h6 class="fs-5">Career level</h6 class="fs-5">
+                    <div class="d-flex justify-content-center justify-content-sm-start">
+                      <img src="images/icon10.png" alt="" class="img-icon">
+                      <p class="text-info mx-2">Experienced</p>
+                    </div>
+                  </div>
+  
+                  <div class="d-flex flex-column col-sm-6">
+                    <h6 class="fs-5">Salary</h6 class="fs-5">
+                    <div class="d-flex justify-content-center justify-content-sm-start">
+                      <img src="images/icon11.png" alt="" class="img-icon">
+                      <p class="text-info mx-2">2000$</p>
+                    </div>
+                  </div>
+  
+  
+                  <div class="d-flex flex-column col-sm-6">
+                    <h6 class="fs-5">Years of experience</h6 class="fs-5">
+                    <div class="d-flex justify-content-center justify-content-sm-start">
+                      <img src="images/icon12.png" alt="" class="img-icon">
+                      <p class="text-info mx-2">3 years</p>
+                    </div>
+                  </div>
+  
+                
+  
+  
+                </div>
+                </div>
+           </div>
+           </div>
+     <!--===== end card five  =========-->
+
+
+     <!--======== start card six ========= -->
+     <div class="card border-primary border-2  mb-4" id="list-item-6">
+        <!-- ======= edit icon ===== -->
+        <div class="position-relative mx-4 ">
+          <a href="">
+            <i class="bi bi-pencil-fill  position-absolute text-black top-0 end-0 text-center justify-content-center align-items-center d-flex mt-3 fst-normal"><span class="mx-2">Edit</span></i>
+          </a> 
+          </div>
+      <div class="text-container mx-4 mt-2 row">
+        <h3 class="card-title text-primary fw-medium">Skills</h3>
+        <div class="col-sm-12 mb-4">
+        
+          <div class="mt-2 d-flex justify-content-start flex-row flex-wrap ">
+            <button class="btn btn-primary text-white mx-1 my-1">Java</button>
+            <button class="btn btn-primary text-white mx-1 my-1">Full time</button>
+            <button class="btn btn-primary text-white mx-1 my-1">Web development</button>
+            <button class="btn btn-primary text-white mx-1 my-1">Full time</button>
+          </div>
+          </div>
+        <!-- =======  end col-sm-12 ===== -->
+     </div>
+     </div>
+        <!--======== end card six ========-->
+
+
+   <!--======== start card seven ========= -->
+   <div class="card border-primary border-2  mb-4" id="list-item-7">
+      <!-- ======= edit icon ===== -->
+      <div class="position-relative mx-4 ">
+        <a href="">
+          <i class="bi bi-pencil-fill  position-absolute text-black top-0 end-0 text-center justify-content-center align-items-center d-flex mt-3 fst-normal"><span class="mx-2">Edit</span></i>
+        </a> 
+        </div>
+    <div class="text-container mx-4 mt-2 row">
+      <h3 class="card-title text-primary fw-medium">Job type</h3>
+      <div class="col-sm-12 mb-4">
+        <div class="mt-2 d-flex justify-content-start flex-row flex-wrap ">
+          <button class="btn btn-primary text-white mx-1 my-1">Full time</button>
+          <button class="btn btn-primary text-white mx-1 my-1">Full time</button>
+        </div>
+      <!-- =====  end row ===== -->
+        </div>
+      <!-- =======  end col-sm-12 ===== -->
+   </div>
+   </div>
+      <!--======== end card seven ========-->
+
+   <!--======== start card eight ========= -->
+   <div class="card border-primary border-2  mb-4" id="list-item-8">
+      <!-- ======= edit icon ===== -->
+      <div class="position-relative mx-4 ">
+        <a href="">
+          <i class="bi bi-pencil-fill  position-absolute text-black top-0 end-0 text-center justify-content-center align-items-center d-flex mt-3 fst-normal"><span class="mx-2">Edit</span></i>
+        </a> 
+        </div>
+    <div class="text-container mx-4 mt-2 row">
+      <h3 class="card-title text-primary fw-medium">Work type</h3>
+      <div class="col-sm-12 mb-4">
+        <div class="mt-2 d-flex justify-content-start flex-row flex-wrap ">
+          <button class="btn btn-primary text-white mx-1 my-1">Hybrid</button>
+          <button class="btn btn-primary text-white mx-1 my-1">Remote</button>
+        </div>
+      <!-- =====  end row ===== -->
+        </div>
+      <!-- =======  end col-sm-12 ===== -->
+   </div>
+   </div>
+      <!--======== end card eight ========-->
+
+   <!--======== start card nine ========= -->
+   <div class="card border-primary border-2  mb-4" id="list-item-9">
+      <!-- ======= edit icon ===== -->
+      <div class="position-relative mx-4 ">
+        <a href="">
+          <i class="bi bi-pencil-fill  position-absolute text-black top-0 end-0 text-center justify-content-center align-items-center d-flex mt-3 fst-normal"><span class="mx-2">Edit</span></i>
+        </a> 
+        </div>
+    <div class="text-container mx-4 mt-2 row">
+      <h3 class="card-title text-primary fw-medium">Languages</h3>
+      <div class="col-sm-12 mb-4">
+        <div class="mt-2 d-flex justify-content-start flex-row flex-wrap ">
+          <button class="btn btn-primary text-white mx-1 my-1">Arabic - Fluent</button>
+          <button class="btn btn-primary text-white mx-1 my-1">English - Advanced</button>
+        </div>
+      <!-- =====  end row ===== -->
+        </div>
+      <!-- =======  end col-sm-12 ===== -->
+   </div>
+   </div>
+      <!--======== end card nine ========-->
+   <!--======== start card ten ========= -->
+   <div class="card border-primary border-2  mb-4" id="list-item-10">
+    
+    <div class="text-container mx-4 mt-2 row">
+      <h3 class="card-title text-primary fw-medium">Courses</h3>
+      <div class="d-flex flex-column">
+        <div class="d-flex flex-row justify-content-between row">
+          <div class="col-sm-9">
+            <h6 class="mt-3 fw-bold">Route Academy</h6>
+        </div>
+        <div class="col-sm-3 text-end float-end">
+
+          <div class="position-relative mx-4 d-flex justify-content-between align-items-center mt-3">
+            <a href=""  class="text-decoration-none mx-2">
+              <i class="bi bi-pencil-fill text-black text-center justify-content-center align-items-center d-flex fst-normal"><span class="mx-2">Edit</span></i>
+            </a>
+              <!-- Button trigger modal -->
+              <a href="#" class="text-decoration-none mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="bi bi-trash3-fill text-black text-center justify-content-center align-items-center d-flex fst-normal"><span class="mx-2">Remove</span></i>
+              </a>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Are you sure? </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      This action will remove the your education detail "faculty of science" 
+                      Are you certain you want to remove this this education detail?
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary rounded-3 py-1 text-white" >Delete</button>
+                      <button type="button" class="btn btn-outline-primary rounded-3 py-1" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        </div>
+        <span class="text-info">Front-end development | May 2023 - October 2023</span>
+        <span class="text-secondary mb-2 fs-7">Grade: Excellent</span>
+      </div>
+      <div class="d-flex flex-column">
+        <div class="d-flex flex-row justify-content-between row">
+          <div class="col-sm-9">
+            <h6 class="mt-3 fw-bold">Route Academy</h6>
+        </div>
+        <div class="col-sm-3 text-end float-end">
+
+          <div class="position-relative mx-4 d-flex justify-content-between align-items-center mt-3">
+            <a href=""  class="text-decoration-none mx-2">
+              <i class="bi bi-pencil-fill text-black text-center justify-content-center align-items-center d-flex fst-normal"><span class="mx-2">Edit</span></i>
+            </a>
+              <!-- Button trigger modal -->
+              <a href="#" class="text-decoration-none mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="bi bi-trash3-fill text-black text-center justify-content-center align-items-center d-flex fst-normal"><span class="mx-2">Remove</span></i>
+              </a>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Are you sure? </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      This action will remove the your education detail "faculty of science" 
+                      Are you certain you want to remove this this education detail?
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary rounded-3 py-1 text-white" >Delete</button>
+                      <button type="button" class="btn btn-outline-primary rounded-3 py-1" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        </div>
+        <span class="text-info">Front-end development | May 2023 - October 2023</span>
+        <span class="text-secondary mb-2 fs-7">Grade: Excellent</span>
+      </div>
+
+   </div>
+   </div>
+      <!--======== end card ten ========-->
+        </div>
+        <!-- end scroll  -->
+    <!-- end row  -->
+      <!-- ========  end cards ======= -->
+      </div>
+    </div>
+
+    </div>
+  </section>
+  <!-- End Send Section -->
+
+
+  
+<!--=========== start sidebar Filter =========-->
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="col-12 col-lg-5 col-xl-3 border p-4 rounded-3">
+      
+      <div id="list-example" class="list-group border-0">
+        <a class="list-group-item list-group-item-action border-0" href="#list-item-1">Introduction video & Bio</a>
+        <a class="list-group-item list-group-item-action border-0" href="#list-item-2">Personal information</a>
+        <a class="list-group-item list-group-item-action border-0" href="#list-item-5">Professional information</a>
+        <a class="list-group-item list-group-item-action border-0" href="#list-item-3">Experience</a>
+        <a class="list-group-item list-group-item-action border-0" href="#list-item-6">Skills</a>
+        <a class="list-group-item list-group-item-action border-0" href="#list-item-7">Job type</a>
+        <a class="list-group-item list-group-item-action border-0" href="#list-item-8">Work type</a>
+        <a class="list-group-item list-group-item-action border-0" href="#list-item-9">Languages</a>
+        <a class="list-group-item list-group-item-action border-0" href="#list-item-4">Education</a>
+        <a class="list-group-item list-group-item-action border-0" href="#list-item-10">Courses</a>
+        <a class="list-group-item list-group-item-action border-0" href="#list-item-2">Contacts</a>
+      </div>
+
+
+  
+  </div>
+  </div>
+  </div>
+  <!--=========== End sidebar Filter =========-->
+
+
+
+  <!----- Footer ----->
+  <footer class="footer bg-primary py-4" id="footer">
+    <div class="container">
+      <div class="row gy-3">
+        <!-- Start content Footer -->
+          <div class="col-lg-4 col-md-6 footer-links text-white">
+            <h2 class=" fw-bold position-relative cursor-pointer">Talentak  </h2>
+            <h6 class="fw-normal">“Lorem ipsum dolor sit amet, 
+              consectetur elit nisi adipiscing” </h6>
+
+              <h4 class="mt-4">Find us on Social media</h4>
+            <div class="social-links d-flex ">
+              <a href="#" class="d-flex align-items-center justify-content-center rounded-5 me-2 twitter fs-5"><i class="bi bi-twitter"></i></a>
+              <a href="" class="d-flex align-items-center justify-content-center rounded-5 me-2 linkedin fs-5" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="" class="d-flex align-items-center justify-content-center rounded-5 me-2 facebook fs-5" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="" class="d-flex align-items-center justify-content-center rounded-5 me-2 instagram fs-5" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="" class="d-flex align-items-center justify-content-center rounded-5 me-2 whatsapp fs-5" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            
+              <a href="" class="d-flex align-items-center justify-content-center rounded-5 me-2 twitter fs-5"><i class="bi bi-google"></i></a>
+            </div>
+          </div>
+  
+          
+        <div class="col-lg-2 col-md-6 d-flex text-white">
+          <div>
+            <h4 class="fs-5 fw-bold position-relative border-bottom border-3">Services</h4>
+            <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Development</h6>
+            <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Design and arts</h6>
+            <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Writing & Translation</h6>
+            <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Video & animation</h6>
+            <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Digital marketing</h6>
+            <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Business</h6>
+            <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Photography</h6>
+            <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Music & Audio</h6>
+
+          </div>
+        </div>
+        <!-- Start content Footer -->
+          <div class="col-lg-2 col-md-6 footer-links d-flex text-white">
+            <div>
+              <h4 class="fs-5 fw-bold position-relative border-bottom border-3">About</h4>
+            <a href="aboutUspage.html" class="text-white text-decoration-none">
+              <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer text-white">About us</h6>
+            </a> 
+              
+
+            </div>
+          </div>
+
+        <!-- Start content Footer -->
+        <div class="col-lg-2 col-md-6 footer-links d-flex text-white">
+          <div>
+            <h4 class="fs-5 fw-bold position-relative border-bottom border-3">Contact us</h4>
+          <a href="contactUspage.html"  class="text-white text-decoration-none">
+            <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Contact Us</h6>
+          </a>
+          <a href="terms.html" class="text-white text-decoration-none">
+            <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Terms & Conditions</h6>
+          </a>
+          <a href="privacy.html" class="text-white text-decoration-none">
+            <h6 class="fs-7 fw-normal mx-3 mx-sm-0 cursor-pointer">Privacy Policy</h6>
+          </a>
+
+          </div>
+        </div>
+
+      
+    </div>
+    </div>
+
+    <!-- start copyright -->
+    <div class="container text-center fs-6">
+      <div class="copyright">
+        <a href="" class="text-white text-decoration-none">© 2023 ProductName. All rights reserved.</a>
+      </div>
+    </div>
+
+
+  </footer>
+  <!-- End Footer -->
+
+
+
+
+
+
+
+  <!-- JS Files -->
+
+  <!-- bootstrap js file -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <!-- swiper js file -->
+  <script src="assets/swiper/swiper-bundle.min.js"></script>
+
+ 
+  <script src="js/backtotop.js"></script>
+
+
+</body>
+
+</html>

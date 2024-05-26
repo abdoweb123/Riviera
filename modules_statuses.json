@@ -1,0 +1,19 @@
+{
+	"About": true,
+	"Admin": true,
+	"Client": true,
+	"Country": true,
+	"Notification": true,
+	"Report": true,
+	"Payment": true,
+	"Privacy": true,
+	"Setting": true,
+	"Slider": true,
+	"Term": true,
+	"Complaint": true,
+	"Address": true,
+	"Ride": true,
+	"Car": true,
+	"Driver": true,
+	"Rating": true
+}
